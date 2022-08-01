@@ -12,7 +12,7 @@ except ValueError:
 try:
     videoClip = VideoFileClip(VIDEO_FILE_NAME)
     videoClip.write_gif("test.gif")
-except:
+except IndexError:
     print("Invalid video. GIF was not created")
 else:
     print("GIF created successfully")
