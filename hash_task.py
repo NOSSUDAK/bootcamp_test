@@ -6,5 +6,5 @@ def print_hash(value) -> None:
         print(f"Object of type {type(value)} is unhashable")
 
 
-s = "Python Bootcamp"
-print_hash(s)
+value_to_hash = input("Enter value to be hashed: ")
+print_hash(value_to_hash)
